@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Chapter 1</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1 style="text-align:center;">Chapter 1:</h1>
+            <h2 style="text-align:center;">Introduction to HTML</h2>
+        </div>
+    </header>
+
+    <div class="content" style="margin-top: 50px;">
+        <h3><strong>HTML</strong> stands for <u>Hypertext Markup Language</u>, and it is the most widely used language to write Web Pages.</h3>
+        <ul>
+            <li>
+                <p>
+                    Hypertext refers to the way in which Web pages (HTML documents) are linked together. Thus, the link available on a webpage is called <i><u>Hypertext</u></i>.
+                </p>
+            </li>
+            <li>
+                <p>
+                    As its name suggests, <strong>HTML</strong> is a Markup Language which means you use HTML to simply "mark-up" a text document with tags that tell a Web browser how to structure it to display.
+                </p>
+            </li>
+        </ul>
+        <p>
+            Originally, HTML was developed with the intent of defining the intent of defining the structure of documents like headings, paragraphs, lists, and so forth to facilitate the sharing of scientific information between researchers. Now, HTML is being widely used to format web pages with the help of different tags available in HTML language.
+        </p>
+    </div>
+    
+    <hr style="margin-top: 50px;">
+
+    <div class="html-document">
+        <h3>BASIC HTML DOCUMENT</h3>
+        <p >In its simplest form, following is an example of an HTML document:</p>
+        
+        <div class="sample-code">
+            <pre>
+                <code id="code-example">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;This is document title&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;This is a heading&lt;/h1&gt;
+            &lt;p&gt;Document content goes here.....&lt;/p&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+                </code>
+            </pre>
+        </div>
+        <div class="sample1run" style="margin-top: 25px; text-align:center;">
+            <button class="btn" onclick="toggleImage1()"> See Result</button>
+            <img id="image" src="sample1.png" style="display:none;" class="responsive-img">
+        </div>
+    </div>
+
+    <hr style="margin-top: 50px;">
+
+    <div class="html-tags">
+        <div class="tag-table">
+            <h3>HTML TAGS</h3>
+            <p>
+                As told earlier, HTML is a markup language and makes use of various tags to format the content. These tags are enclosed within angle braces &lt;Tag Name&gt;. Except few tags, most of the tags have their corresponding closing tags. For example, &lt;html&gt; has its closing tag&lt;/html&gt; and &lt;body&gt; tag has its closing tag &lt;/body&gt; tag etc.
+            </p>
+
+                <table style="width:100%">
+                <tr>
+                    <th>Tag</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">&lt;!DOCTYPE...&gt;</td>
+                    <td>
+                        a document type declaration in HTML that specifies which version of HTML the web page is written in. It is typically found at the beginning of an HTML document before the &lt;html&gt; tag.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">&lt;html&gt;</td>
+                    <td>
+                        a tag used in HTML to define the beginning and end of an HTML document. It is the root element of an HTML page, and it contains all other elements such as &lt;head&gt;, &lt;title&gt;, and &lt;body&gt;.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">&lt;head&gt;</td>
+                    <td>
+                        This tag represents the document's header which can keep other HTML tags like &lt;Title&gt;, &lt;link&gt;, etc... 
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">&lt;Title&gt;</td>
+                    <td>
+                        specifies the title of the document that appears in the browser's title bar.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">&lt;body&gt;</td>
+                    <td>
+                        &lt;body&gt; is an HTML element that defines the body section of an HTML document. The body section contains the main content of the web page, such as text, images, videos, and interactive elements.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">&lt;h1&gt;</td>
+                    <td>
+                        &lt;h1&gt; is an HTML element that defines a heading on a web page. It is the most important heading tag in HTML, and it is typically used for the main heading or title of the page.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">&lt;p&gt;</td>
+                    <td>
+                        &lt;p&gt; is an HTML element that defines a paragraph of text on a web page. It is one of the most commonly used HTML tags, and it is used to group together a block of text on a web page.
+                    </td>
+                </tr>
+                </table>
+        </div>
+        
+        <div class="description">    
+            <h3>The &lt;!DOCTYPE&gt; Declaration</h3>
+            <p>
+                The &lt;!DOCTYPE&gt; declaration tag is used by the web browser to understand the version of the HTML used in the document. Current version of HTML is 5 and it makes use of the following declaration:
+            </p>
+            <div style="border: 1px solid black; display: inline-block; padding: 5px;">
+                &lt;!DOCTYPE html&gt;
+            </div>
+
+            <h3>Container and Empty tags</h3>
+            <p>
+                There are two types of tags namely container and empty.
+                <br>Container tags have the start and end tags together with the content while empty tags stand alone and do not require end
+                tags.   
+                <br>
+                <br>Example of container tags: &lt;p&gt;This is a paragraph.&lt;/p&gt;
+                <br>
+                <br>Example of empty tags: &lt;br&gt;
+            </p>
+        </div>
+
+        <hr style="margin-top: 50px;">
+            <h2 style="text-align: center;">HTML - Basic TAGS</h2>
+        <hr style="margin-bottom: 50px;">
+
+        <div class="Heading-tag">
+
+            <h3>Heading Tags</h3>
+            <p>
+                Any document starts with a heading. You can use different sizes for your headings. HTML also has six levels of headings, which use the elements &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, and &lt;h6&gt;. While displaying any heading, browser adds one line before and one line after that heading. <br>Example:
+            </p>
+
+            <div class="sample-code">
+                <pre>
+                    <code id="code-example">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Heading Example&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;This is heading 1&lt;/h1&gt;
+            &lt;h2&gt;This is heading 2&lt;/h2&gt;
+            &lt;h3&gt;This is heading 3&lt;/h3&gt;
+            &lt;h4&gt;This is heading 4&lt;/h4&gt;
+            &lt;h5&gt;This is heading 5&lt;/h5&gt;
+            &lt;h6&gt;This is heading 6&lt;/h6&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+                    </code>
+                </pre>
+            </div>
+
+            <div class="sample2run" style="margin-top: 25px; text-align:center;">
+                <button class="btn" onclick="toggleImage2()"> See Result</button>
+                <img id="image2" src="sample2.png" style="display:none;" class="responsive-img">
+            </div>
+        </div>
+
+        <div class="paragraph-tag">
+            <h3>Paragraph Tags</h3>
+            <p>
+                The &lt;p&gt; tag offers a way to structure your text into different paragraphs. Each paragraph of text should go in between an opening &lt;p&gt; and a closing &lt;/p&gt; tag as shown below in the example:
+            </p>
+
+            <div class="sample-code">
+                <pre>
+                    <code id="code-example">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Paragraph Example&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p&gt;Here is a first paragraph of text.&lt;/p&gt;
+            &lt;p&gt;Here is a second paragraph of text.&lt;/p&gt;
+            &lt;p&gt;Here is a third paragraph of text.&lt;/p&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+                    </code>
+                </pre>
+            </div>
+
+            <div class="sample3run" style="margin-top: 25px; text-align:center;">
+                <button class="btn" onclick="toggleImage3()"> See Result</button>
+                <img id="image3" src="sample3.png" style="display:none;" class="responsive-img">
+            </div>
+        </div>
+    </div>
+
+    <hr style="margin-top: 50px;">
+
+    <div class="home" style="display: flex; justify-content: space-between;">
+        <a href="index.html">
+            <button class="btn">HOME</button>
+        </a>
+        <a href="Chapt2.html">
+            <button class="btn">NEXT</button>
+        </a>
+    </div>
+</body>
+    <style>
+        .sample-code {
+            border: 1px solid black;
+        }
+        .btn {
+            background-color: #fff;
+            color: black;
+            padding: 12px 16px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #f9004d;
+        }
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+            border: px solid black;
+        }
+        table, th, td {
+            border:1px solid black;
+            padding: 5px;
+        }
+    </style>
+</html>

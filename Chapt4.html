@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Chapter 4</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1 style="text-align:center;">Chapter 4:</h1>
+            <h2 style="text-align:center;">HTML - Phrase Tags and Tables</h2>
+            <p>
+                <big>
+                The phrase tags have been desicolgned for specific purposes, though they are displayed in a similar way as other basic tags like &lt;b&gt;, &lt;i&gt;, &lt;pre&gt;, and &lt;tt&gt;, you have seen in previous chapter. This chapter will take you through all the important phrase tags, so let's start seeing them one by one.
+                </big>
+            </p>
+        </div>
+    </header>
+    
+    <hr style="margin-top: 50px;">
+
+    <h2>Emphasized Text</h2>
+    <p>
+        <big>
+        Anything that appears within &lt;em&gt;...&lt;/em&gt; element is displayed as emphasized text.
+        </big>
+    </p>
+    <h4 style="text-align: center;">
+        &lt;p&gt;The following word uses a &lt;em&gt;emphasized&lt;/em&gt; typeface.&lt;/p&gt;
+    </h4>
+    <p style="text-align: center;">
+        The following word uses a <em>emphasized</em> typeface.
+    </p>
+    
+    <hr style="margin-top: 50px;">
+
+    <h2>
+        Marked Text
+    </h2>
+    <p>
+        <big>
+        Anything that appears with-in &lt;mark&gt;...&lt;/mark&gt; element, is displayed as marked with yellow ink.
+        </big>
+    </p>
+    <h4 style="text-align: center;">
+        &lt;p&gt;The following word has been &lt;mark&gt;marked&lt;/mark&gt; with yellow&lt;/p&gt;
+    </h4>
+    <p style="text-align: center;">
+        The following word has been <mark>marked</mark> with yellow
+    </p>
+    <hr style="margin-top: 50px;">
+
+    <h2>
+        Strong Text
+    </h2>
+    <p>
+        <big>
+            Anything that appears within &lt;strong&gt;...&lt;/strong&gt; element is displayed as important text.
+        </big>
+    </p>
+    <h4 style="text-align: center;">
+        &lt;p&gt;The following word uses a &lt;strong&gt;strong&lt;/strong&gt; typeface.&lt;/p&gt;
+    </h4>
+    <p style="text-align: center;">
+        The following word uses a <strong>strong</strong> typeface.
+    </p>
+   
+    <hr style="margin-top: 50px;">
+
+    <h2>
+        Text Abbreviation
+    </h2>
+    <p>
+        <big>
+            You can abbreviate a text by putting it inside opening &lt;abbr&gt; and closing &lt;/abbr&gt; tags. If present, the title attribute must contain this full description and nothing else.
+        </big>
+    </p>
+    <h4 style="text-align: center;">
+        &lt;p&gt;My hero's name is &lt;abbr title="Jose Rizal"&gt;Joriz&lt;/abbr&gt;.&lt;/p&gt;
+    </h4>
+    <p style="text-align: center;">
+        My hero's name is <abbr title="Jose Rizal">Joriz</abbr>.
+    </p>
+   
+    <hr style="margin-top: 50px;">
+    
+    <h2>
+        Acronym Element
+    </h2>
+    <p>
+        <big>
+            The &lt;acronym&gt; element allows you to indicate that the text between &lt;acronym&gt; and &lt;/acronym&gt; tags is an acronym. At present, the major browsers do not change the appearance of the content of the &lt;acronym&gt; element.
+        </big>
+    </p>
+    <h4 style="text-align: center;">
+        &lt;p&gt;This chapter covers marking up text in &lt;acronym&gt;XHTML&lt;/acronym&gt;.&lt;/p&gt;
+    </h4>
+    <p style="text-align: center;">
+        This chapter covers marking up text in <acronym>XHTML</acronym>.
+    </p>
+   
+    <hr style="margin-top: 50px;">
+    
+    <h2>
+        Text Direction
+    </h2>
+    <p>
+        <big>
+            The &lt;bdo>...&lt;/bdo> element stands for Bi-Directional Override and it is used to override the current text direction.
+        </big>
+    </p>
+    <h4 style="text-align: center;">
+        &lt;p&gt;This text will go left to right.&lt;/p&gt;
+        &lt;p&gt;&lt;bdo dir="rtl"&gt;This text will go right to left.&lt;/bdo&gt;&lt;/p&gt;
+    </h4>
+    <p style="text-align: center;">
+        This text will go left to right.
+    </p>
+    <p style="text-align: center;">
+        <bdo dir="rtl">This text will go right to left.</bdo>
+    </p>
+   
+    <hr style="margin-top: 50px;">
+        
+    <h2>
+        Special Terms
+    </h2>
+    <p>
+        <big>
+            The &lt;dfn&gt;...&lt;/dfn&gt; element (or HTML Definition Element) allows you to specify that you are introducing a special term. It'susage is similar to italic words in the midst of a paragraph. 
+            <br>Typically, you would use the &lt;dfn&gt; element the first time you introduce a key term. Most recent browsers render the content of a &lt;dfn&gt; element in an italic font.
+        </big>
+    </p>
+    <h4 style="text-align: center;">
+        &lt;p&gt;The following word is a &lt;dfn&gt;special&lt;/dfn&gt; term.&lt;/p&gt;
+    </h4>
+    <p style="text-align: center;">
+        The following word is a <dfn>special</dfn> term.
+    </p>
+   
+    <hr style="margin-top: 50px;">
+        
+    <h2>
+        Quoting Text
+    </h2>
+    <p>
+        <big>
+            When you want to quote a passage from another source, you should put it in between&lt;blockquote&gt;...&lt;/blockquote&gt; tags. Text inside a &lt;blockquote&gt; element is usually indented from the left and right edges of the surrounding text, and sometimes uses an italicized font.
+        </big>
+    </p>
+    <h4 style="text-align: center;">
+        &lt;p&gt;The following description of XHTML is taken from the W3C Web site:&lt;/p&gt; 
+        <br>&lt;blockquote&gt;XHTML 1.0 is the W3C's first Recommendation for XHTML, following on from earlier work on HTML 4.01, HTML 4.0, HTML 3.2 and HTML 2.0.&lt;/blockquote&gt;
+    </h4>
+    <p style="text-align: center;">
+        The following description of XHTML is taken from the W3C Web site:
+    </p>
+    <blockquote style="text-align: center;">
+        XHTML 1.0 is the W3C's first Recommendation for XHTML, following on from earlier work on HTML 4.01, HTML 4.0, HTML 3.2 and HTML 2.0.
+    </blockquote>
+   
+    <hr style="margin-top: 50px;">
+        
+    <h2>
+        Short Quotations
+    </h2>
+    <p>
+        <big>
+            The &lt;q&gt;...&lt;/q&gt; element is used when you want to add a double quote within a sentence.
+        </big>
+    </p>
+    <h4 style="text-align: center;">
+        &lt;p&gt;Dalig is in Antipolo, &lt;q&gt;I think I am correct&lt;/q&gt;.&lt;/p&gt;
+    </h4>
+    <p style="text-align: center;">
+        Dalig is in Antipolo, <q>I think I am correct</q>.
+    </p>
+   
+    <hr style="margin-top: 50px;">
+            
+    <h2>
+        Text Citations
+    </h2>
+    <p>
+        <big>
+            If you are quoting a text, you can indicate the source placing it between an opening &lt;cite&gt;tag and closing &lt;/cite&gt; tag As you would expect in a print publication, the content of the &lt;cite&gt; element is rendered in italicized text by default.
+        </big>
+    </p>
+    <h4 style="text-align: center;">
+        &lt;p&gt;This HTML tutorial is derived from &lt;cite&gt;W3 Standard for HTML&lt;/cite&gt;.&lt;/p&gt;
+    </h4>
+    <p style="text-align: center;">
+        This HTML tutorial is derived from <cite>W3 Standard for HTML</cite>.
+    </p>
+   
+    <hr style="margin-top: 50px;">
+            
+    <h2>
+        Computer Code   
+    </h2>
+    <p>
+        <big>
+            Any programming code to appear on a Web page should be placed inside &lt;code&gt;...&lt;/code&gt;tags. Usually the content of the &lt;code&gt; element is presented in a monospaced font, just like the code in most programming books.
+        </big>
+    </p>
+    <h4 style="text-align: center;">
+        &lt;p&gt;Regular text. &lt;code&gt;This is code.&lt;/code&gt; Regular text.&lt;/p&gt;
+    </h4>
+    <p style="text-align: center;">
+        Regular text. <code>This is code.</code> Regular text.
+    </p>
+   
+    <hr style="margin-top: 50px;">
+            
+    <h2>
+        Keyboard Text
+    </h2>
+    <p>
+        <big>
+            When you are talking about computers, if you want to tell a reader to enter some text, you can use the &lt;kbd&gt;...&lt;/kbd&gt; element to indicate what should be typed in, as in this example.
+        </big>
+    </p>
+    <h4 style="text-align: center;">
+        &lt;p&gt;Regular text. &lt;kbd&gt;This is inside kbd element&lt;/kbd&gt; Regular text.&lt;/p&gt;
+    </h4>
+    <p style="text-align: center;">
+        Regular text. <kbd>This is inside kbd element</kbd> Regular text.
+    </p>
+   
+    <hr style="margin-top: 50px;">
+            
+    <h2>
+        Programming Variables
+    </h2>
+    <p>
+        <big>
+            This element is usually used in conjunction with the &lt;pre&gt; and &lt;code&gt; elements to indicate that the content of that element is a variable.
+        </big>
+    </p>
+    <h4 style="text-align: center;">
+        &lt;p&gt;&lt;code&gt;document.write("&lt;var&gt;user-name&lt;/var&gt;")&lt;/code&gt;&lt;/p&gt;
+    </h4>
+    <p style="text-align: center;">
+        <code>document.write("<var>user-name</var>")</code>
+    </p>
+   
+    <hr style="margin-top: 50px;">
+            
+    <h2>
+        Program Output
+    </h2>
+    <p>
+        <big>
+            The &lt;samp&gt;...&lt;/samp&gt; element indicates sample output from a program, and script etc. Again, it is mainly used when documenting programming or coding concepts.
+        </big>
+    </p>
+    <h4 style="text-align: center;">
+        &lt;p&gt;Result produced by the program is &lt;samp&gt;Hello World!&lt;/samp&gt;&lt;/p&gt;
+    </h4>
+    <p style="text-align: center;">
+        Result produced by the program is <samp>Hello World!</samp>
+    </p>
+   
+    <hr style="margin-top: 50px;">
+            
+    <h2>
+        Address Text
+    </h2>
+    <p>
+        <big>
+            The &lt;address&gt;...&lt;/address&gt; element is used to contain any address.
+        </big>
+    </p>
+    <h4 style="text-align: center;">
+        &lt;address&gt;327 San Antonio St., Poblacion, Inopacan, Leyte&lt;/address&gt;
+    </h4>
+    <p style="text-align: center;">
+        <address style="text-align: center;">327 San Antonio St., Poblacion, Inopacan, Leyte</address>
+    </p>
+   
+    <hr style="margin-top: 50px;">
+
+    <h2>
+        Tables
+    </h2>
+    <p>
+        <big>
+            Almost all Web sites are laid out using tables. Tables arrange and organize contents into columns and rows. Basically, they can be made via the container tags &lt;table&gt;&lt;/table&gt;. Each row within the table is defined by the container tags &lt;tr&gt;&lt;/tr&gt;. 
+            <br>
+            <br>Moreover, each cell or data within a row is defined by the container tags &lt;td>&lt;/td>. 
+            <br>
+            <br>Remember that the cells (&lt;td&gt;&lt;/td&gt;) are placed inside rows (&lt;tr&gt;&lt;/tr&gt;) and rows are placed inside the table (&lt;table&gt;&lt;/table&gt;). 
+            <br>
+            <br>A table by default has no borders. 
+            <br>
+            <br>There are various ways to change the appearance of your table; you can change the thickness and color of the border around it, set its background color or image, etc. These various ways can be done through the table’s attributes.
+        </big>
+    </p>
+    
+    <div class="sample-code">
+        <pre style="margin-left: 10px;">
+            <code id="code-example">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Tables&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;table align="center" border="3" bordercolor="red" width="600"
+        cellpadding="4" cellspacing="6"&gt;
+        &lt;caption&gt;&lt;h3 align="center"&gt;Directory&lt;/h3&gt;&lt;/caption&gt;
+            &lt;tr height="35" bgcolor="yellow" align="center"&gt;
+            &lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;b&gt;Mobile Number&lt;/b&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;b&gt;Landline&lt;/b&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            
+            &lt;tr&gt;
+            &lt;td&gt;John von Neumann&lt;/td&gt;
+            &lt;td&gt;+361-1228-1903&lt;/td&gt;
+            &lt;td&gt;+1301-02081957&lt;/td&gt;
+            &lt;/tr&gt;
+            
+            &lt;tr&gt;
+            &lt;td&gt;Charles Babbage&lt;/td&gt;
+            &lt;td&gt;+44 020-12261791&lt;/td&gt;
+            &lt;td&gt;+44 020-10181871&lt;/td&gt;
+            &lt;/tr&gt;
+            
+            &lt;tr&gt;
+            &lt;td&gt;Muḥammad ibn Mūsā al-Khwārizmī&lt;/td&gt;
+            &lt;td&gt;+998 820&lt;/td&gt;
+            &lt;td&gt;+964 850&lt;/td&gt;
+            &lt;/tr&gt;
+            
+            &lt;tr&gt;
+            &lt;td&gt;Alan Mathison Turing&lt;/td&gt;
+            &lt;td&gt;+44 020-06231912&lt;/td&gt;
+            &lt;td&gt;+44 020-06071954&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+            </code>
+        </pre>
+    </div>
+    <div class="sample9run" style="margin-top: 25px; text-align:center;">
+        <button class="btn" onclick="toggleImage9()"> See Result</button>
+        <img id="image9" src="sample9.png" style="display:none;" class="responsive-img">
+    </div>
+   
+    <hr style="margin-top: 50px;">
+    
+    <div class="home" style="display: flex; justify-content: space-between;">
+        <a href="Chapt3.html">
+            <button class="btn">BACK</button>
+        </a>
+        <a href="index.html">
+            <button class="btn">HOME</button>
+        </a>
+        <a href="Chapt5.html">
+            <button class="btn">NEXT</button>
+        </a>
+
+    </div>
+</body>
+    <style>
+        .sample-code {
+            border: 1px solid black;
+        }
+        .btn {
+            background-color: #fff;
+            color: black;
+            padding: 12px 16px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #f9004d;
+        }
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid black;
+        }
+        table, th, td {
+            border:1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Chapter 6</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1 style="text-align:center;">Chapter 6:</h1>
+            <h2 style="text-align:center;">JavaScript - Placement</h2>
+            <p>
+                <big>
+                    There is a flexibility given to include JavaScript code anywhere in an HTML document. However the most preferred ways to include JavaScript in an HTML file are as follows:
+                </big>
+            </p>
+        </div>  
+
+        <div class="chapt8-content">
+            <p>
+                <ul>
+                    <li>
+                        Script in &lt;head&gt;...&lt;/head&gt; section.
+                    </li>
+                    <li>
+                        Script in &lt;body&gt;...&lt;/body&gt; section.
+                    </li>
+                    <li>
+                        Script in &lt;body&gt;...&lt;/body&gt; and &lt;head&gt;...&lt;/head&gt; sections.
+                    </li>
+                    <li>
+                        Script in an external file and then include in &lt;head&gt;...&lt;/head&gt; section.
+                    </li>
+                    <li>
+                        In the following section, we will see how we can place JavaScript in an HTML file in different ways.
+                    </li>
+                </ul>
+            </p>
+
+    <hr style="margin-top: 50px;">
+        <h2>JavaScript in &lt;head&gt;...&lt;/head&gt;> Section</h2>
+            <p>
+                <ul>
+                    <li>
+                        If you want to have a script run on some event, such as when a user clicks somewhere, then you will place that script in the head as follows.
+                    </li>
+                    <li>
+                        -In the "Javascript" section, select "Do not allow any site to run JavaScript" or "Allow all sites to run JavaScript (recommended)".
+                    </li>  
+                </ul>
+            </p>
+
+    <div class="sample-code">
+        <pre style="margin-left: 10px;">
+            <code id="code-example">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;script type=&quot;text/javascript&quot;&gt;
+        &lt;!--
+        function sayHello() {
+        alert(&quot;Hello World&quot;)
+        }
+        //--&gt;
+        &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        Click here for the result
+        &lt;input type="button" onclick="sayHello()" value="Say Hello" /&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+            </code>
+        </pre>
+    </div>
+    <div class="sample10run" style="margin-top: 25px; text-align:center;">
+        <button class="btn" onclick="toggleImage10()"> See Result</button>
+        <img id="image10" src="sample10.png" style="display:none;" class="responsive-img">
+    </div>
+            
+    <hr style="margin-top: 50px;">
+
+    <h2>JavaScript in &lt;body&gt;...&lt;/body&gt; Section</h2>
+        <p>
+            If you need a script to run as the page loads so that the script generates content in the page, then the script goes in the &lt;body&gt; portion of the document. In this case, you would not have any function defined using JavaScript. Take a look at the following code.
+        </p>
+
+<div class="sample-code">
+        <pre style="margin-left: 10px;">
+            <code id="code-example">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        &lt;!--
+        document.write("Hello World")
+        //--&gt;
+        &lt;/script&gt;
+    &lt;p&gt;This is web page body &lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+            </code>
+        </pre>
+    </div>
+    <div class="sample11run" style="margin-top: 25px; text-align:center;">
+        <button class="btn" onclick="toggleImage11()"> See Result</button>
+        <img id="image11" src="sample11.png" style="display:none;" class="responsive-img">
+    </div>
+
+    <hr style="margin-top: 50px;">
+   
+    <h2 style="text-align:center;">JavaScript - Variables</h2>
+    <hr style="margin-top: 25px;">
+
+    <h2>What is a Variable?</h2>
+        <p>
+            A variable is a temporary storage of values or expressions. Expressions are formulae that use mathematical symbols and numbers or a way to assign values to a variable. For example, x = 1 + 3 is an expression and the value of x will hold the sum of one plus three which is equivalent to four.
+        </p>
+        <p>
+            In declaring a variable, there are certain rules to follow:
+            <ul>
+                <li>
+                    Variables names are case-sensitive meaning an uppercased variable like “X” does not have the same meaning as “x”
+                </li>
+                <li>
+                    Variables names must begin with a letter or underscore (‘_’)
+                </li>
+                <li>
+                    The rest of the name must be composed of letters, numbers or underscore
+                </li>
+                <li>
+                    Avoid naming variables with reserved words. Reserved words are words reserved by JavaScript for its own use
+                </li>
+            </ul>
+            Take note that if you did not declare a variable and you gave the variable a value, the variable will be automatically declared.
+        </p>
+        <p>
+            Variables can hold numbers, expressions or string literals. String literals are text enclosed in pairs of quotation marks. Numeric digits that are inside the quotation marks will be considered as a string and will lose then its numeric value. If the characters are not enclosed in quotation marks, JavaScript might interpret the characters as an object or function.
+            <br>
+            <br>Example of variable declaration:
+            <br>
+            <pre>
+            var x = 5;
+            var y = x + 5;
+            var fan = “Standard”;
+            var isDone = false;
+            </pre>
+        </p>
+
+    <hr style="margin-top: 50px;">
+
+    <h2>JavaScript Datatypes</h2>
+        <p>
+            One of the most fundamental characteristics of a programming language is the set of data types it supports. These are the type of values that can be represented and manipulated in a programming language. JavaScript allows you to work with three primitive data types:
+            <ul>
+                <li>Numbers, e.g., 123, 120.50 etc.</li>
+                <li>Strings of text, e.g. "This text string" etc.</li>
+                <li>Boolean, e.g. true or false.</li>
+            </ul>
+        </p>
+        <p>
+            JavaScript also defines two trivial data types, null and undefined, each of which defines only a single value. In addition to these primitive data types, JavaScript supports a composite data type known as object. We will cover objects in detail in a separate chapter.
+        </p>
+        <p>
+            Note: Java does not make a distinction between integer values and floating-point values. All numbers in JavaScript are represented as floating-point values. JavaScript represents numbers using the 64-bit floating-point format defined by the IEEE 754 standard.
+        </p>
+
+    <hr style="margin-top: 50px;">
+
+    <h2>JavaScript Variable Names</h2>
+    <p>
+        While naming your variables in JavaScript, keep the following rules in mind.
+        <ul>
+            <li>
+                You should not use any of the JavaScript reserved keywords as a variable name. These keywords are mentioned in the next section. For example, break or boolean variable names are not valid.
+            </li>
+            <li>
+                JavaScript variable names should not start with a numeral (0-9). They must begin with a letter or an underscore character. For example, 123test is an invalid variable name but _123test is a valid one.
+            </li>
+            <li>
+                JavaScript variable names are case-sensitive. For example, Name and name are two different variables.
+            </li>
+        </ul>
+    </p>
+
+    <hr style="margin-top: 50px;">
+
+    <h2>JavaScript Reserved Words</h2>
+    <p>
+        A list of all the reserved words in JavaScript are given in the following table. They cannot be used as JavaScript variables, functions, methods, loop labels, or any object names.
+    </p>
+    <img src="reserved-words.png" alt="Java - Reserved Words" class="responsive-img">
+        </div>
+    </header>  
+    <hr style="margin-top: 50px;">
+
+    <div class="home" style="display: flex; justify-content: space-between;">
+        <a href="Chapt5.html">
+            <button class="btn">BACK</button>
+        </a>
+        <a href="index.html">
+            <button class="btn">HOME</button>
+        </a>
+        <a href="Chapt7.html">
+            <button class="btn">NEXT</button>
+        </a>
+
+    </div>
+</body>
+    <style>
+        .sample-code {
+            border: 1px solid black;
+        }
+        .btn {
+            background-color: #fff;
+            color: black;
+            padding: 12px 16px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #f9004d;
+        }
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid black;
+        }
+        table, th, td {
+            border:1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Chapter 8</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1 style="text-align:center;">Chapter 8:</h1>
+            <h2 style="text-align:center;">JavaScript Pop-up Boxes</h2>
+        </div>
+    </header>  
+    <hr style="margin-top: 50px;">
+
+        <h2>What is a Popup Boxes?</h2>
+            <p>
+                Popup boxes are those windows that pop-out of your screen. They could be before a page is fully loaded, effect of an event on a page or before leaving a page. JavaScript has three kinds of popup boxes and these are
+                <ul>
+                    <li>Alert box</li>
+                    <li>Prompt box</li>
+                    <li>Confirm box</li>
+                </ul>
+                These popup boxes can be useful in warning the user, gathering user input or simply to verify something.
+            </p>
+            <pre>
+        ALERT BOX syntax      -    <strong>alert(“message”);</strong>
+        PROMPT BOX syntax     -    <strong>prompt(“message”, “defaultvalue”);</strong>
+        CONFIRM BOX syntax    -    <strong>confirm(“message”);</strong>
+            </pre>
+
+    <div class="sample-code">
+        <pre style="margin-left: 10px;">
+            <code id="code-example">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;script type=&quot;text/javascript&quot;&gt;
+            function show_alert()
+            {
+            alert("WARNING! WARNING!");
+            }
+        &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;input type="button" onclick="show_alert()" value="show alert box" /&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+            </code>
+        </pre>
+    </div>
+    <div class="sample12run" style="margin-top: 25px; text-align:center;">
+        <button class="btn" onclick="show_alert()"> See Result</button>
+    </div>
+
+    <div class="sample-code" style="margin-top: 50px;">
+        <pre style="margin-left: 10px;">
+            <code id="code-example">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+	  &lt;script type="text/JavaScript"&gt;
+		function show_prompt()
+		{
+		  var name=prompt("Please enter your name: ", "nameless");
+
+			if (name!=null && name!="")
+			{
+			  document.write("Welcome " + name + "! Please come in");
+			}
+		}
+	  &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+	&lt;input type="button" onclick="show_prompt()" value="show prompt box" /&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+            </code>
+        </pre>
+    </div>
+    <div class="sample13run" style="margin-top: 25px; text-align:center;">
+        <button class="btn" onclick="show_prompt()">See Result</button>
+      </div>
+
+      <hr style="margin-top: 50px;">
+
+    <div class="home" style="display: flex; justify-content: space-between;">
+        <a href="Chapt7.html">
+            <button class="btn">BACK</button>
+        </a>
+        <a href="index.html">
+            <button class="btn">HOME</button>
+        </a>
+        <a href="Chapt9.html">
+            <button class="btn">NEXT</button>
+        </a>
+
+    </div>
+</body>
+    <style>
+        .sample-code {
+            border: 1px solid black;
+        }
+        .btn {
+            background-color: #fff;
+            color: black;
+            padding: 12px 16px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #f9004d;
+        }
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid black;
+        }
+        table, th, td {
+            border:1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</html>

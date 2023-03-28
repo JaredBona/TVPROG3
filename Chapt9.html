@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Chapter 9</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1 style="text-align:center;">Chapter 9:</h1>
+            <h2 style="text-align:center;">JavaScript - Functions</h2>
+        </div>
+    </header>  
+    <hr style="margin-top: 50px;">
+
+        <h2>What is a Function?</h2>
+            <p>
+                A function is a set of statements or blocks of codes combined together for a particular use. It is usually used so that you will not have to retype your codes again when you need them; you can simply call it to execute it. 
+                <br>You may call a function anywhere within the page or even from an external JavaScript file. Functions can be defined anywhere in the head section or body section, however, it is ideal to put the function in the head section so that you are assured that it is loaded properly.
+            </p>
+            <pre>
+    Syntax of a function        <strong>Function
+                                Functionname(var1,var2,var3...,varN)
+                                {
+                                //Place your code here
+                                }</strong>
+            </pre>
+            <p>
+                functionname, is the name of the function. var1, var2,..., varN are parameters. These are values that are passed on to the function whenever it is triggered. Take note that the open and close braces are required in functions. A function without a parameters should include the open and close parentheses () after the name of the function and remember the function must be in lower case otherwise a JavaScript error will be called.
+            </p>
+
+    <div class="sample-code">
+        <pre style="margin-left: 10px;">
+            <code id="code-example">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+	  &lt;script type="text/JavaScript"&gt;
+        function displaymessage()
+        {
+        alert("Hi There!");
+        }
+	  &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;input type="button" value="Click me!" onclick="displaymessage()" /&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+            </code>
+        </pre>
+    </div>
+
+    <div class="sample13run" style="margin-top: 25px; text-align:center;">
+        <button class="btn" onclick="displaymessage()">See Result</button>
+      </div>
+
+    <hr style="margin-top: 50px;">
+
+      <h2>The return Statement</h2>
+      <p>
+          A function may require specifying a resulting output, for examplethat of a computation, the return statement will be used to give that output. Therefore, functions that give out a value must use a return statement.
+      </p>
+
+    <hr style="margin-top: 50px;">
+
+        <h2>What is a Loop?</h2>
+        <p>
+            There are times when you want a block of code repeated over and over again until a certain condition is satisfied. This can be done by creating a loop. A loop is a repetitive cycle of a block of code until the condition is met.
+            <br>In JavaScript, there are a variety of loops:
+            <ul>
+                <li>
+                    For loop – it loops through a block of code within a specified number of times.
+                </li>
+                <li>
+                    While loop – it loops through a block of code until the condition is satisfied.
+                </li>
+                <li>
+                    Do-while loop – it is like while loop, however, it will execute the set of codes at least once
+                </li>
+                <li>
+                    For-in loop – it loops through the elements of an array.
+                </li>
+            </ul>
+        </p>
+        <p>
+            If for instance, you want to exit from the loop after a condition has been met, you can use the break statement. This statement will immediately break the loop and continue the execution of codes after the said loop. The continue statement will break the current loop and will continue to the next value.
+        </p>
+        <pre>
+    Syntax of a for loop        <strong>for (var=startvalue;var&gt;=endvalue;var=var+increment)
+                                {
+                                //Place your code here
+                                }</strong>
+        </pre>
+<div class="sample-code">
+        <pre style="margin-left: 10px;">
+            <code id="code-example">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;body&gt;
+     &lt;script type="text/JavaScript"&gt;
+        var x;
+        for (x=0;x&lt;=6;x++)
+        {
+        document.write(++x);
+        document.write("&lt;br /&gt;");
+        }
+        document.write("Kaboom!");
+     &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+            </code>
+        </pre>
+    </div>
+    <div class="sample15run" style="margin-top: 25px; text-align:center;">
+        <button class="btn" onclick="toggleImage15()"> See Result</button>
+        <img id="image15" src="sample15.png" style="display:none;" class="responsive-img">
+    </div>
+
+    <hr style="margin-top: 50px;">
+        
+
+    <div class="home" style="display: flex; justify-content: space-between;">
+        <a href="Chapt8.html">
+            <button class="btn">BACK</button>
+        </a>
+        <a href="index.html">
+            <button class="btn">HOME</button>
+        </a>
+        <a href="Chapt10.html">
+            <button class="btn">NEXT</button>
+        </a>
+
+    </div>
+</body>
+    <style>
+        .sample-code {
+            border: 1px solid black;
+        }
+        .btn {
+            background-color: #fff;
+            color: black;
+            padding: 12px 16px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #f9004d;
+        }
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid black;
+        }
+        table, th, td {
+            border:1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Chapter 3</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1 style="text-align:center;">Chapter 3:</h1>
+            <h2 style="text-align:center;">HTML - Formatting</h2>
+        </div>
+    </header>  
+    <div class="content" style="margin-top: 50px;">
+        <h2>Font Styles and Effects</h2>
+        <p>
+            Now that you can make chunk of text appear as headings, appear as paragraphs or get enumerated as lists, it’s now time to move on to providing them with styles and effects.
+            <br>
+            <br>Remember that your Web site either provides entertainment and/or information; thus enticing your viewers is one main concern therefore supplying your content with design is a major boost. But do not exaggerate in doing so. Remember that there is always beauty in simplicity.
+            <br>
+            <br>Below anythingelse, let us first take a look at some terms used:
+        </p>
+        <ul>
+            <li>
+                <strong>Typography –</strong> appearance and arrangement of the characters that make up your text.
+            </li>
+            <li>
+                <strong>Typeface –</strong> the actual appearance, examples are Times New Roman, Arial, etc.
+            </li>
+            <li>
+                <strong>Type style –</strong> this is the variations given to the text such as boldface, italic, regular, etc.
+            </li>
+            <li>
+                <strong>Font –</strong>  combination of typeface and type style.
+            </li>
+        </ul>
+    <hr style="margin-top: 50px;">
+        <h2>Specifying Font Styles</h2>
+        <pre style="margin-left: 5px;">
+&lt;b&gt;&lt;/b&gt;                 display the text in <b>Bold Face</b>
+&lt;i&gt;&lt;/i&gt;                 display the text in <i>Italics</i>
+&lt;u&gt;&lt;/u&gt;                 display the text in <u>Underline</u>
+&lt;strike&gt;&lt;/strike&gt;       display the text in <strike>Strikethrough</strike>
+&lt;sup&gt;&lt;/sup&gt;             display the text in <sup>superscript</sup>
+&lt;sub&gt;&lt;/sub&gt;             display the text in <sub>subscript</sub>
+&lt;em&gt;&lt;/em&gt;               display the text in emphasis
+&lt;strong&gt;&lt;/strong&gt;       display the text in <strong>strength</strong>
+&lt;big&gt;&lt;/big&gt;             display the text with an increase in size
+&lt;small&gt;&lt;/small&gt;         display the text with a decrease in size
+        </pre>
+
+        <hr style="margin-top: 50px;">
+        
+        <div class="Grouping-content">
+            <h2>Grouping Content</h2>
+            <p>
+                The &lt;div&gt; and &lt;span&gt; elements allow you to group together several elements to create sections or subsections of a page. For example, you might want to put all of the footnotes on a page within a &lt;div&gt; element to indicate that all of the elements within that &lt;div&gt;  element relate to the footnotes. You might then attach a style to this &lt;div&gt; element so that they appear using a special set of style rules.
+            </p>
+        </div>
+        <div class="sample-code">
+            <pre>
+                <code id="code-example">
+    &lt;!DOCTYPE html&gt; 
+    &lt;html&gt; 
+      &lt;head&gt; 
+        &lt;title&gt; Div Tag Example&lt;/title&gt; 
+      &lt;/head&gt;
+      &lt;body&gt;                    
+        &lt;div id="menu" align="middle" &gt;
+          &lt;a href="/index.htm"&gt;HOME&lt;/a&gt;
+          &lt;a href="/about/contact_us.htm"&gt;CONTACT&lt;/a&gt;
+          &lt;a href="/about/index.htm"&gt;ABOUT&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div id="content" align="left" bgcolor="white"&gt;
+          &lt;h5&gt;Content Articles&lt;/h5&gt;
+          &lt;p&gt;Actual content goes here.....&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/body&gt;
+      &lt;/html&gt; 
+                </code>
+            </pre>
+        </div>
+        <div class="sample7run" style="margin-top: 25px; text-align:center;">
+            <button class="btn" onclick="toggleImage7()"> See Result</button>
+            <img id="image7" src="sample7.png" style="display:none;" class="responsive-img">
+        </div>
+    </div>
+
+    <div class="sample-code" style="margin-top: 25px;">
+        <pre>
+            <code id="code-example">
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;title&gt;Span Tag Example&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;p&gt;
+          This is the example of &lt;span style="color:green"&gt;span tag
+          &lt;/span&gt; and the &lt;span style="color:red"&gt;div tag&lt;/span&gt; 
+          alongwith CSS
+        &lt;/p&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;                
+            </code>
+        </pre>
+    </div>
+    <div class="sample8run" style="margin-top: 25px; text-align:center;">
+        <button class="btn" onclick="toggleImage8()"> See Result</button>
+        <img id="image8" src="sample8.png" style="display:none;" class="responsive-img">
+    </div>
+
+    <hr style="margin-top: 50px;">
+
+    <div class="home" style="display: flex; justify-content: space-between;">
+        <a href="Chapt2.html">
+            <button class="btn">BACK</button>
+        </a>
+        <a href="index.html">
+            <button class="btn">HOME</button>
+        </a>
+        <a href="Chapt4.html">
+            <button class="btn">NEXT</button>
+        </a>
+
+    </div>
+</body>
+    <style>
+        .sample-code {
+            border: 1px solid black;
+        }
+        .btn {
+            background-color: #fff;
+            color: black;
+            padding: 12px 16px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #f9004d;
+        }
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid black;
+        }
+        table, th, td {
+            border:1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+    </style>
+</html>
